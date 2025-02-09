@@ -17,9 +17,11 @@ main {
 }
 #scoreBoard {
     border: 2px solid red;
+    padding: 9px;
 }
 #msgBox {
     border: 2px solid green;
+    padding: 9px;
 }
 #playingArea {
     justify-content: center;
@@ -38,12 +40,31 @@ main {
     /* z-index: 0; */
 }
 #userChoice {
+    /* border-radius: 23%; */
+    padding: 9px;
     margin-top: 10px;
     border: 2px solid gray;
+    /* width: 56px; */
+    display: flex;
+    gap: 12px;
 }
 #restratBtn {
+    border-radius: 12px;
+    padding: 5px 9px;
     border: 2px solid blue;
 }
+
+.userChoices {
+    display: flex;
+    flex-direction: row;
+    padding: 23px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    border: 2px solid red;
+
+}
+
 @media screen and (max-width: 400px) {
     #playingArea {
         width: 100%;

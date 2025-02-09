@@ -25,25 +25,24 @@ main {
 }
 #playingArea {
     justify-content: center;
-    border: 2px solid gold;
-    height: 50%;
+    border: 2px solid rgb(218, 218, 218);
+    background-color: rgba(41, 43, 43, 0.792);
+    border-radius: 12px;
+    height: 30vh;
     overflow: hidden;
     display: flex;
-    background-position: left;
-    background-size: cover;
-    width: 45%;
-    padding: 2px 20px 2px 2px;
+    width: 43vh;
 }
-#playingArea img {
+/* #playingArea img {
     width: 100%;
     height: 100%;
     z-index: 0;
-}
+} */
 #userChoice {
     /* border-radius: 23%; */
     padding: 9px;
-    margin-top: 10px;
-    border: 2px solid gray;
+    /* margin-top: 10px; */
+    /* border: 2px solid gray; */
     /* width: 56px; */
     display: flex;
     gap: 12px;
@@ -69,16 +68,28 @@ main {
     background-position: center; */
 }
 #warArea {
-    z-index: 2;
-    width: 45%;
+    /* display: none; */
+    /* z-index: 2; */
+    width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+    border: 2px solid green;
+    gap: 12px
+    /* background-color: aqua; */
 }
 .warGoing {
-    filter: invert();
-    width: 23px;
+    width: 100%;  
+    height: 14vh;
+    border: 2px solid white;
+    padding: 23px;
 }
+.warGoing img {
+    filter: invert();
+    height: 191px;
+    width: 166px;
+}
+
 /* #o1 img {
 
 }
@@ -94,7 +105,7 @@ main {
     margin-top: 15px;
     filter: invert();
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     #playingArea {
         width: 100%;
     }
@@ -103,4 +114,4 @@ main {
     #playingArea {
         width: 80%;
     }
-}
+} */

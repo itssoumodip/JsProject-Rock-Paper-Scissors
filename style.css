@@ -37,7 +37,7 @@ main {
 #playingArea img {
     width: 100%;
     height: 100%;
-    /* z-index: 0; */
+    z-index: 0;
 }
 #userChoice {
     /* border-radius: 23%; */
@@ -62,9 +62,38 @@ main {
     width: 23px;
     border-radius: 50%;
     border: 2px solid red;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    /* background-size: cover;
+    background-position: center; */
+}
+#warArea {
+    z-index: 2;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.warGoing {
+    filter: invert();
+    width: 23px;
+}
+/* #o1 img {
 
 }
-
+#o2 img {
+    
+}
+#o3 img {
+    
+} */
+.userChoices img {
+    width: 140px;
+    height: 170px;
+    margin-top: 15px;
+    filter: invert();
+}
 @media screen and (max-width: 400px) {
     #playingArea {
         width: 100%;

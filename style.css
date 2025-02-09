@@ -75,19 +75,21 @@ main {
     /* align-items: center; */
     justify-content: center;
     border: 2px solid green;
-    gap: 12px
+    /* padding: -9px; */
+    /* gap: 12px */
     /* background-color: aqua; */
 }
 .warGoing {
-    width: 100%;  
+    width: 100%;
     height: 14vh;
-    border: 2px solid white;
-    padding: 23px;
+    /* border: 2px solid white; */
+    padding: 6px;
+    margin: 11px;
 }
 .warGoing img {
     filter: invert();
     height: 191px;
-    width: 166px;
+    width: 200px;
 }
 
 /* #o1 img {

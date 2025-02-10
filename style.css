@@ -18,10 +18,14 @@ main {
 #scoreBoard {
     border: 2px solid red;
     padding: 9px;
+    font-weight: 500;
+    display: none;
 }
 #msgBox {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 9px;
+    font-weight: 500;
+    font-size: 28px;
 }
 #playingArea {
     justify-content: center;
@@ -51,8 +55,13 @@ main {
     border-radius: 12px;
     padding: 5px 9px;
     border: 2px solid blue;
+    display: none;
 }
-
+#userChoiceName {
+    padding: 9px;
+    display: flex;
+    gap: 12px;
+}
 .userChoices {
     display: flex;
     flex-direction: row;
@@ -60,12 +69,13 @@ main {
     height: 23px;
     width: 23px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 4px solid rgb(219, 219, 219);
     overflow: hidden;
     align-items: center;
     justify-content: center;
     /* background-size: cover;
     background-position: center; */
+    transition: 1s ease; 
 }
 #warArea {
     /* display: none; */
@@ -74,7 +84,7 @@ main {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* padding: -9px; */
     /* gap: 12px */
     /* background-color: aqua; */
@@ -86,28 +96,43 @@ main {
     /* padding: 6px; */
     /* margin: 11px; */
     justify-content: center;
-    display: flex
-;
+    display: flex;
 }
 .warGoing img {
     filter: invert();
     height: 196%;
 }
-
-/* #o1 img {
-
-}
-#o2 img {
-    
-}
-#o3 img {
-    
-} */
 .userChoices img {
     width: 140px;
     height: 170px;
     margin-top: 15px;
     filter: invert();
+}
+.userChoices:hover {
+    opacity: 0.2;
+    border: 4px solid #b3b3b3;
+    transition: none;
+}
+.userChoicesName {
+    width: 23px;
+    /* border: 2px solid green; */
+}
+#userChoiceName {
+    /* border: 4px solid gray; */
+    width: 223px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 59px;
+    margin-left: -33px;
+    margin-top: -30px;
+    /* transition: 2s; */
+}
+#t1 {
+    margin-left: 3px;
+}
+#t2 {
+    margin-left: 7px;
 }
 /* @media screen and (max-width: 400px) {
     #playingArea {

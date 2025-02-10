@@ -75,7 +75,7 @@ main {
     justify-content: center;
     /* background-size: cover;
     background-position: center; */
-    transition: 1s ease; 
+    /* transition: 1s ease;    */
 }
 #warArea {
     /* display: none; */
@@ -101,7 +101,16 @@ main {
 .warGoing img {
     filter: invert();
     height: 196%;
+    animation: shake 2s ease; 
 }
+@keyframes shake { 
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(20deg); }
+    25% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); } 
+    75% { transform: rotate(0deg); }
+    100% { transform: rotate(20deg); }  
+}    
 .userChoices img {
     width: 140px;
     height: 170px;

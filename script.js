@@ -21,7 +21,11 @@ const computerImgPaths = {
 
 choices.forEach((choice, index) => {
     choice.addEventListener("click", () => {
-        userChoice = choiceArray[index];
-        userWar.src = userImgPaths[]
+        const userChoice = choiceArray[index];
+        const computerChoice = choiceArray[Math.floor(Math.random()*3)];
+
+        userWar.src = userImgPaths[userChoice];
+        computerWar.src = computerImgPaths[computerChoice];
     })
 });
+

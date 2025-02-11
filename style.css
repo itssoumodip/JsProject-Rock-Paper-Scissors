@@ -16,10 +16,11 @@ main {
     gap: 12px;
 }
 #scoreBoard {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 9px;
     font-weight: 500;
     display: none;
+    font-size: 23px;
 }
 #msgBox {
     /* border: 2px solid green; */
@@ -54,8 +55,10 @@ main {
 #restratBtn {
     border-radius: 12px;
     padding: 5px 9px;
-    border: 2px solid blue;
+    border: 3px solid rgb(212, 212, 212);
     display: none;
+    background-color: black;
+    font-size: 14px;
 }
 #userChoiceName {
     padding: 9px;

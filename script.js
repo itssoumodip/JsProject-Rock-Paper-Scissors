@@ -25,14 +25,19 @@ choices.forEach((choice, index) => {
 
         userWar.classList.add('handMotion');
         computerWar.classList.add('handMotion');
+        msgBox.textContent = "Loading....";   
         setTimeout(() => {
-            
-        })
-        const userChoice = choiceArray[index];
-        const computerChoice = choiceArray[Math.floor(Math.random()*3)];
-        userWar.src = userImgPaths[userChoice];
-        computerWar.src = computerImgPaths[computerChoice];
+            userWar.classList.remove('handMotion');
+            computerWar.classList.remove('handMotion');
+            const userChoice = choiceArray[index];
+            const computerChoice = choiceArray[Math.floor(Math.random()*3)];
+            userWar.src = userImgPaths[userChoice];
+            computerWar.src = computerImgPaths[computerChoice];
+        },2000)
     })
 });
+function winnerDecide() {
+    
+}
 
 

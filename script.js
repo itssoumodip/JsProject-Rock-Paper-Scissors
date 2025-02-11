@@ -29,12 +29,12 @@ choices.forEach((choice, index) => {
         computerWar.classList.add('handMotion');
         msgBox.textContent = "Loading....";   
         setTimeout(() => {
-            userWar.classList.remove('handMotion');
-            computerWar.classList.remove('handMotion');
             const userChoice = choiceArray[index];
             const computerChoice = choiceArray[Math.floor(Math.random()*3)];
             userWar.src = userImgPaths[userChoice];
             computerWar.src = computerImgPaths[computerChoice];
+            userWar.classList.remove('handMotion');
+            computerWar.classList.remove('handMotion');
             const result = winnerDecide(userChoice, computerChoice);
             updateMesg(result);
             updateScore(result);

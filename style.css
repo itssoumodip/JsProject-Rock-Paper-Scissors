@@ -101,15 +101,14 @@ main {
 .warGoing img {
     filter: invert();
     height: 196%;
-    animation: shake 2s ease; 
+    animation: shake 1s ease; 
 }
 @keyframes shake { 
     0% { transform: rotate(0deg); }
-    10% { transform: rotate(20deg); }
-    25% { transform: rotate(0deg); }
-    50% { transform: rotate(20deg); } 
-    75% { transform: rotate(0deg); }
-    100% { transform: rotate(20deg); }  
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); } 
+    75% { transform: rotate(15deg); } 
+    100% { transform: rotate(0deg); }   
 }    
 .userChoices img {
     width: 140px;

@@ -103,7 +103,7 @@ main {
     height: 196%;
 }
 .handMotion {
-    animation: shake 1s ease-in-out 2; 
+    animation: shake 1s ease-in-out 2.3; 
 }
 @keyframes shake {  
     0% { transform: rotate(0deg); }

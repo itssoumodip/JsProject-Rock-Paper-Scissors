@@ -92,16 +92,15 @@ main {
 .warGoing {
     width: 100%;
     height: 14vh;
-    /* border: 2px solid white; */
-    /* padding: 6px; */
-    /* margin: 11px; */
     justify-content: center;
     display: flex;
 }
 .warGoing img {
     filter: invert();
     height: 196%;
-    animation: shake 1s ease; 
+}
+.handMotion {
+    animation: shake 1s ease-in-out 1.5; 
 }
 @keyframes shake { 
     0% { transform: rotate(0deg); }

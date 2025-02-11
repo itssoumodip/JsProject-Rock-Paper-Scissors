@@ -3,6 +3,7 @@ const userWar = document.getElementById('userWar').querySelector('img');
 const computerWar = document.getElementById('computerWar').querySelector('img');
 const msgBox = document.getElementById('msgBox');
 const scoreBoard = document.getElementById('scoreBoard');
+// const warGoing = document.getElementsByClassName('warGoing').querySelector('img')
 
 let userScore = 0;
 let computerScore = 0;
@@ -22,8 +23,11 @@ const computerImgPaths = {
 choices.forEach((choice, index) => {
     choice.addEventListener("click", () => {
 
-        
-
+        userWar.classList.add('handMotion');
+        computerWar.classList.add('handMotion');
+        setTimeout(() => {
+            
+        })
         const userChoice = choiceArray[index];
         const computerChoice = choiceArray[Math.floor(Math.random()*3)];
         userWar.src = userImgPaths[userChoice];
